@@ -16,14 +16,6 @@ List<Cat> findByName(String name);
 ```
 This method will return a list of cat by a name which taken from parameter.
 
-*Some examples of naming convention:*
-
-| Method Naming                         | Jpql Equivalent            |
-| -----------                           | -----------                |
-| findByActiveTrue()                    | … where x.active = true    |
-| findByAgeGreaterThanEqual             | … where x.age >= ?        |
-| findByAge(Is)NotNull                  | … where x.age not null     |
-
 ### 3 - What is PagingAndSortingRepository?
 PagingAndSortingRepository is the interface that extends from CrudRepository to provide additional methods to retrieve entities using pagination and sorting.
 It provides two method:
